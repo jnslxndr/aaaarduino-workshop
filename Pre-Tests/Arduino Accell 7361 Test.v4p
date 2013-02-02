@@ -1,0 +1,491 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+   <PATCH nodename="C:\Users\horst\Desktop\Arduino Accell 7361 Test.v4p" bgcolor="15329769" filename="C:\Users\horst\Desktop\Arduino Accell 7361 Test.v4p" systemname="Arduino Accell 7361 Test">
+   <BOUNDS height="12630" left="0" top="0" type="Window" width="20145">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="101" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="1890" top="7575" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2835" left="1890" top="7575" type="Box" width="765">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,0,1,0,0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="105" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="100" left="4656" top="6870" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="360" left="4656" top="6870" type="Box" width="1950">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="53" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="14" values="0,0,1,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="14" values="0,0,1,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <BOUNDS height="100" left="960" top="990" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3015" left="960" top="990" type="Box" width="780">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="14">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="118" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="2520" top="5514" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="480" left="2520" top="5514" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="119" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="3270" top="5514" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="480" left="3270" top="5514" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="120" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="4035" top="5514" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="480" left="4035" top="5514" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="121" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="4815" top="5514" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="495" left="4815" top="5514" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="122" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
+   <BOUNDS height="0" left="5580" top="5175" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="5580" top="5175" type="Box" width="1590">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="COM3">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="130" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="270" left="5655" top="5700" type="Node" width="1170">
+   </BOUNDS>
+   <BOUNDS height="270" left="5655" top="5700" type="Box" width="1170">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" visible="0" values="|&lt;&lt; Connect it!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\addonpack\lib\nodes\modules\Devices\Arduino (Devices StandardFirmata 2.x).v4p" id="116" nodename="Arduino (Devices StandardFirmata 2.x)" systemname="Arduino (Devices StandardFirmata 2.x)" debug="0">
+   <BOUNDS height="270" left="960" top="6450" type="Node" width="4680">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="PinModes" visible="1">
+   </PIN>
+   <PIN pinname="ReportAnalog">
+   </PIN>
+   <PIN pinname="ReportDigital">
+   </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
+   <PIN pinname="Enable">
+   </PIN>
+   <PIN pinname="ComPort">
+   </PIN>
+   <BOUNDS height="12900" left="11160" top="120" type="Window" width="8985">
+   </BOUNDS>
+   <PIN pinname="Analog" visible="1">
+   </PIN>
+   <PIN pinname="Digital" visible="1">
+   </PIN>
+   <PIN pinname="Firmwareversion" visible="1" encoded="0">
+   </PIN>
+   <PIN pinname="Pin Modes" visible="1">
+   </PIN>
+   <PIN pinname="Report Analog" visible="1">
+   </PIN>
+   <PIN pinname="Report Digital" visible="1">
+   </PIN>
+   <PIN pinname="I2C Data" visible="1">
+   </PIN>
+   <PIN pinname="SampleRate" slicecount="1" values="40">
+   </PIN>
+   <PIN pinname="IsConnected" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="116" dstpinname="ReportAnalog" srcnodeid="118" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="116" dstpinname="ReportDigital" srcnodeid="119" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="116" dstpinname="Enable" srcnodeid="121" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="116" dstpinname="ComPort" srcnodeid="122" srcpinname="Output Enum">
+   </LINK>
+   <LINK dstnodeid="101" dstpinname="Y Input Value" srcnodeid="116" srcpinname="Digital">
+   </LINK>
+   <LINK dstnodeid="105" dstpinname="Input String" srcnodeid="116" srcpinname="Firmwareversion">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="140" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="3750" top="6870" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3750" top="6870" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="116" srcpinname="IsConnected" dstnodeid="140" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="141" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="2805" top="6870" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2805" top="6870" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="116" srcpinname="OnData" dstnodeid="141" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Reset">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="142" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="1725" top="993" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1725" top="993" width="960" height="4290">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="20" values="OUTPUT,OUTPUT,INPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,PWM,OUTPUT,OUTPUT,ANALOG,ANALOG,ANALOG,OUTPUT,OUTPUT,OUTPUT">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="142" srcpinname="Output Enum" dstnodeid="116" dstpinname="PinModes">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="116" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="154" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="11910" top="7545" width="555" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11910" top="7545" width="8235" height="26475">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|/* MMA7361 Accelerometer Test                                          BroHogan 12/10/10&cr;&lf; * CAUTION! input pins (Sleep, G-Select, Self-Test) are 3.3V max for HIGH &cr;&lf; * Z should read 1g at rest. The 0g-Detect pin goes high when ALL THREE axes are at 0g.&cr;&lf; * X &amp; Y Bandwidth: 400Hz (Z=300Hz) Output Impedance: 32K&cr;&lf; *   1.5g setting:  Sensitivity: 800 mV/g   -1g = 850mV    0g = 1650mV   1g = 2450mV&cr;&lf; *     6g setting:  Sensitivity: 206 mV/g   -1g = 1444mV   0g = 1650mV   1g = 1856mV&cr;&lf; * mV/analogRead unit = Aref V(3.3) / 1024.0&cr;&lf; * g = [mV/analogRead unit] * ([units] - ([Aref/2]) / [mvPerG]&cr;&lf; * deg. = asin (mVout - 1650mv) / 800mV)  (double asin (double x) ) in radians&cr;&lf; * 0-60 Time = 26.8224 / (g * 9.81) [60MPH = 26.8224 m/s, g = 9.81 m/s/s]&cr;&lf; * Added digitalSmooth by  Paul Badger 2007 - big improvement!&cr;&lf; * (see www.arduino.cc/playground/Main/DigitalSmooth)&cr;&lf; * SETUP: &cr;&lf; * Best to use the 3.3V pin on the (Moderndevices) MMA7361 for ARef&cr;&lf; * TODO:&cr;&lf; * &gt;1g &amp;&amp; &lt;-1g angle calc gets wonky (fixed).&cr;&lf; */&cr;&lf;&cr;&lf;#include &quot;WProgram.h&quot;                   // needed for IDE to understand a &quot;byte&quot;!&cr;&lf;&cr;&lf;#define X_PIN       2                   // X Axis input (analog pin #) &cr;&lf;#define Y_PIN       1                   // Y Axis input (analog pin #) &cr;&lf;#define Z_PIN       3                   // Z Axis input (analog pin #) &cr;&lf;#define GSEL_PIN    14                  // pin on accel for range jmpr - LOW = 1.5 g range&cr;&lf;#define ZERO_G_PIN  9                   // HIGH when X,Y,Z = 0 G&cr;&lf;#define SLEEP_PIN   4                   // CAUTION 3.3V input pin - LOW to enable Sleep Mode&cr;&lf;&cr;&lf;#define AREF_V      5000  //3280        // Aref voltage in mV BEST TO THE 3.2V ON THE ACCEL&cr;&lf;#define LOW_RANGE   800                 // Sensitivity for 1.5 g range in mV/g&cr;&lf;#define HIGH_RANGE  206                 // Sensitivity for 6 g range in mV/g&cr;&lf;#define SAMPLES     13                  // SAMPLES should  be an odd number, no smaller than 3&cr;&lf;&cr;&lf;int xSmoothArray [SAMPLES];             // array for holding X values for smoothing &cr;&lf;int ySmoothArray [SAMPLES];             // array for holding Y values for smoothing &cr;&lf;int zSmoothArray [SAMPLES];             // array for holding Z values for smoothing &cr;&lf;int xOffset, yOffset, zOffset;          // used to hold calculated offsets&cr;&lf;&cr;&lf;int Acc_X, Acc_Y, Acc_Z;                // raw accel output&cr;&lf;float Acc_Xg, Acc_Yg, Acc_Zg;           // accel output expressed in mg&apos;s&cr;&lf;float Xdeg, Ydeg, Zdeg;                 // angle expressed in degrees&cr;&lf;float mVperUnit;                        // calculated mV / analogRead unit&cr;&lf;float mvPerG;                           // Sensitivity for current range in mV/g&cr;&lf;float zeroTo60;                         // seconds for 0-60MPH acceleration equivalent&cr;&lf;boolean lowRange = true;                // 1.5 g max if true - else 6g range &cr;&lf;&cr;&lf;&cr;&lf;void setup(){&cr;&lf;  Serial.begin(9600);&cr;&lf;  pinMode(ZERO_G_PIN,INPUT);            // HIGH when X,Y,Z = 0 G&cr;&lf;  pinMode(GSEL_PIN,INPUT);              // LOW = 1.5 g range&cr;&lf;  //analogReference(EXTERNAL);            // set if Aref pin wired to 3.3V source&cr;&lf;  mVperUnit = AREF_V / 1024.0;          // calc mV / analogRead unit&cr;&lf;&cr;&lf;  Serial.println(&quot;Lay flat for calibration!&quot;);&cr;&lf;  CalAccel();                           // calc offsets&cr;&lf;  delay (1000);&cr;&lf;}&cr;&lf;&cr;&lf;&cr;&lf;void loop(){&cr;&lf;  //lowRange = !digitalRead(GSEL_PIN);    //  read pin on accel for range jmpr - If LOW set flag true&cr;&lf;  lowRange = true;                      // USE THIS IF NOT READING JMPR ON ACCEL&cr;&lf;  if (lowRange)mvPerG = LOW_RANGE;      // Set the mV/g based on the current range&cr;&lf;  else mvPerG = HIGH_RANGE;&cr;&lf;&cr;&lf;  Read_Accel();                         // read the X,Y,Z values from the MMA7361&cr;&lf;  Disp_Vals();                          // display X,Y,Z g values&cr;&lf;  delay(3000);&cr;&lf;}&cr;&lf;&cr;&lf;void Read_Accel(){&cr;&lf;  //digitalSmooth(Acc_X,xSmoothArray,true); // reset running average&cr;&lf;  for (int i=0; i&lt; SAMPLES +2; i++){    // make a series of samples for smoothing&cr;&lf;    Acc_X = analogRead(X_PIN) - xOffset;             // read the X Axis and apply offset&cr;&lf;    Acc_X = digitalSmooth(Acc_X,xSmoothArray,false); // smooth X axis&cr;&lf;    Acc_Y = analogRead(Y_PIN) - yOffset;             // read the Y Axis and apply offset&cr;&lf;    Acc_Y = digitalSmooth(Acc_Y,ySmoothArray,false); // smooth Y axis&cr;&lf;    Acc_Z = analogRead(Z_PIN) - zOffset;             // read the Z Axis and apply offset&cr;&lf;    Acc_Z = digitalSmooth(Acc_Z,zSmoothArray,false); // smooth Z axis&cr;&lf;    delay(5);                           // need this delay for 200Hz max sample rate&cr;&lf;  }&cr;&lf;  // now calc g&apos;s and angle . . .&cr;&lf;  if (Acc_X &gt;= 512) Acc_Xg = mVperUnit * (Acc_X - 512) / mvPerG;&cr;&lf;  else Acc_Xg = ((512 - Acc_X) * (mVperUnit) / mvPerG) * -1;&cr;&lf;  if (Acc_Xg &gt;= -1.0 &amp;&amp; Acc_Xg &lt;= 1.0) Xdeg = asin(Acc_Xg) * (180.0/PI);&cr;&lf;  else Xdeg = 0;&cr;&lf;    zeroTo60 = 26.8224 / (Acc_Xg * 9.81);&cr;&lf;&cr;&lf;  if (Acc_Y &gt;= 512) Acc_Yg = mVperUnit * (Acc_Y - 512) / mvPerG;&cr;&lf;  else Acc_Yg = ((512 - Acc_Y) * (mVperUnit) / mvPerG) * -1;&cr;&lf;  if (Acc_Yg &gt;= -1.0 &amp;&amp; Acc_Yg &lt;= 1.0) Ydeg = asin(Acc_Yg) * (180.0/PI);&cr;&lf;  else Ydeg = 0;&cr;&lf;&cr;&lf;  if (Acc_Z &gt;= 512) Acc_Zg = mVperUnit * (Acc_Z - 512) / mvPerG;&cr;&lf;  else Acc_Zg = ((512 - Acc_Z) * (mVperUnit) / mvPerG) * -1;&cr;&lf;  Acc_Zg += 1.0;                        // add 1 g back into axis&cr;&lf;  if (Acc_Zg &gt;= -1.0 &amp;&amp; Acc_Zg &lt;= 1.0) Zdeg = asin(Acc_Zg) * (180.0/PI);&cr;&lf;  else Zdeg = 0;&cr;&lf;}&cr;&lf;&cr;&lf;void Disp_Vals(){&cr;&lf;  Serial.print(&quot;milli G&apos;s&quot;);&cr;&lf;  Serial.print(&quot;\tX:&quot;);&cr;&lf;  Serial.print(Acc_Xg * 1000,DEC);&cr;&lf;  Serial.print(&quot;\tY:&quot;);&cr;&lf;  Serial.print(Acc_Yg * 1000,DEC);&cr;&lf;  Serial.print(&quot;\tZ:&quot;);&cr;&lf;  Serial.println(Acc_Zg * 1000,DEC);&cr;&lf;&cr;&lf;  Serial.print(&quot;Degrees  &quot;);&cr;&lf;  Serial.print(&quot;\tX:&quot;);&cr;&lf;  Serial.print(Xdeg,DEC);&cr;&lf;  Serial.print(&quot;\tY:&quot;);&cr;&lf;  Serial.print(Ydeg,DEC);&cr;&lf;  Serial.print(&quot;\tZ:&quot;);&cr;&lf;  Serial.println(Zdeg,DEC);&cr;&lf;  Serial.println(&quot;&quot;);&cr;&lf;&cr;&lf;  if (zeroTo60 &gt; 1 &amp;&amp; zeroTo60 &lt; 50){   // only use for zeroTo60 to eliminate noise&cr;&lf;    // Serial.print(&quot;Sec 0-60: &quot;);&cr;&lf;    // Serial.println(zeroTo60,DEC); // zeroTo60 or Xdeg&cr;&lf;  }&cr;&lf;}&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;int digitalSmooth(int rawIn, int *sensSmoothArray, bool Reset){ &cr;&lf;  // modified from: www.arduino.cc/playground/Main/DigitalSmooth&cr;&lf;  int j, k, temp, top, bottom;&cr;&lf;  long total;&cr;&lf;  static int i;&cr;&lf;  static int sorted[SAMPLES];&cr;&lf;  boolean done;&cr;&lf;&cr;&lf;  if (Reset) {                    // added to reset running as an option&cr;&lf;    for (j=0; j&lt;SAMPLES; j++){&cr;&lf;      sensSmoothArray[j] = 0;&cr;&lf;      sorted[j] = 0;&cr;&lf;    }&cr;&lf;    i = 0;&cr;&lf;    return 0;&cr;&lf;  }&cr;&lf;&cr;&lf;  i = (i + 1) % SAMPLES;    // increment counter and roll over if necc. -  % (modulo operator) rolls over variable&cr;&lf;  sensSmoothArray[i] = rawIn;                 // input new data into the oldest slot&cr;&lf;&cr;&lf;  for (j=0; j&lt;SAMPLES; j++){     // transfer data array into anther array for sorting and averaging&cr;&lf;    sorted[j] = sensSmoothArray[j];&cr;&lf;  }&cr;&lf;&cr;&lf;  done = 0;                // flag to know when we&apos;re done sorting              &cr;&lf;  while(done != 1){        // simple swap sort, sorts numbers from lowest to highest&cr;&lf;    done = 1;&cr;&lf;    for (j = 0; j &lt; (SAMPLES - 1); j++){&cr;&lf;      if (sorted[j] &gt; sorted[j + 1]){     // numbers are out of order - swap&cr;&lf;        temp = sorted[j + 1];&cr;&lf;        sorted [j+1] =  sorted[j] ;&cr;&lf;        sorted [j] = temp;&cr;&lf;        done = 0;&cr;&lf;      }&cr;&lf;    }&cr;&lf;  }&cr;&lf;&cr;&lf;  // throw out top and bottom 15% of samples - limit to throw out at least one from top and bottom&cr;&lf;  bottom = max(((SAMPLES * 15)  / 100), 1); &cr;&lf;  top = min((((SAMPLES * 85) / 100) + 1  ), (SAMPLES - 1));   // the + 1 is to make up for asymmetry caused by integer rounding&cr;&lf;  k = 0;&cr;&lf;  total = 0;&cr;&lf;  for ( j = bottom; j&lt; top; j++){&cr;&lf;    total += sorted[j];  // total remaining indices&cr;&lf;    k++; &cr;&lf;  }&cr;&lf;  return total / k;    // divide by number of samples&cr;&lf;}&cr;&lf;&cr;&lf;void CalAccel(){ // make 30 iterations, average, and save offset&cr;&lf;  //otherwise you get an overflow. But 60 iterations should be fine&cr;&lf;  xOffset=0;&cr;&lf;  yOffset=0;&cr;&lf;  zOffset=0;&cr;&lf;  for (int i=1; i &lt;= 30; i++){        &cr;&lf;    xOffset += analogRead(X_PIN);    &cr;&lf;    yOffset += analogRead(Y_PIN);&cr;&lf;    zOffset += analogRead(Z_PIN);&cr;&lf;    delay(5);                           // need delay for 200Hz sample rate&cr;&lf;  }&cr;&lf;  xOffset /=30;                         // get average&cr;&lf;  xOffset -= 512;                       // 0g = 512 raw&cr;&lf;  yOffset /=30;&cr;&lf;  yOffset -= 512;&cr;&lf;  zOffset /=30;                         // this also removes the 1g static accel&cr;&lf;  zOffset -= 512;                       // added back later&cr;&lf;}|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="156">
+   <BOUNDS type="Node" left="4050" top="8055" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" slicecount="1" values="3280">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1024">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Expr (Value)" nodename="Expr (Value)" componentmode="Hidden" id="168">
+   <BOUNDS type="Node" left="5955" top="11970" width="420" height="270">
+   </BOUNDS>
+   <PIN pinname="Variable Names" slicecount="1" values="AccValue">
+   </PIN>
+   <PIN pinname="mvPerG" slicecount="1" visible="1" values="800">
+   </PIN>
+   <PIN pinname="Term" slicecount="1" visible="1" values="0+0">
+   </PIN>
+   <PIN pinname="mVperUnit" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="AccValue" visible="1" slicecount="6" values="-728.125,-702.973877374784,-565.308159722222,-575.702793493635,-578.978485064011,-593.326348396501">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="169" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="6285" top="11190" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6285" top="11190" width="2475" height="525">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|arcsin(AccValue) * (180/PI)|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="0+0">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="169" srcpinname="Output String" dstnodeid="168" dstpinname="Term">
+   </LINK>
+   <NODE componentmode="InABox" id="176" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="6000" top="12645" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1230" left="6000" top="12645" type="Box" width="765">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="180">
+   <BOUNDS type="Node" left="3735" top="8535" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="Output" dstnodeid="180" dstpinname="Input 2">
+   </LINK>
+   <NODE componentmode="InABox" id="181" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="3720" top="9120" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1230" left="3720" top="9120" type="Box" width="765">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="180" srcpinname="Output" dstnodeid="181" dstpinname="Y Input Value">
+   </LINK>
+   <NODE componentmode="InABox" id="187" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="4875" top="12615" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="1230" left="4875" top="12615" type="Box" width="765">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="194" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5295" top="11175" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5295" top="11175" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Map (Value Interval)" nodename="Map (Value Interval)" componentmode="Hidden" id="195">
+   <BOUNDS type="Node" left="5280" top="9945" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Input Breakpoint" visible="1">
+   </PIN>
+   <PIN pinname="Output Breakpoint" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="196">
+   <BOUNDS type="Node" left="5400" top="8145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5400" top="8145" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="850,1660,2450">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="195" dstpinname="Input Breakpoint">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="198">
+   <BOUNDS type="Node" left="6810" top="8355" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6810" top="8355" width="795" height="720">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" values="-1,0,1">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="198" srcpinname="Y Output Value" dstnodeid="195" dstpinname="Output Breakpoint">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="199">
+   <BOUNDS type="Node" left="5280" top="10560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Source Minimum" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Destination Minimum" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="195" srcpinname="Output" dstnodeid="199" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="199" srcpinname="Output" dstnodeid="194" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="194" srcpinname="Y Output Value" dstnodeid="168" dstpinname="AccValue">
+   </LINK>
+   <LINK srcnodeid="180" srcpinname="Output" dstnodeid="195" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="194" srcpinname="Y Output Value" dstnodeid="187" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="168" srcpinname="Output" dstnodeid="176" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="Analog" dstnodeid="180" dstpinname="Input 1">
+   </LINK>
+   </PATCH>
