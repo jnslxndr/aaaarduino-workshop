@@ -25,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1995" top="1305" width="4125" height="945">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="20" visible="1" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,SERVO,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,ANALOG,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
+   <PIN pinname="Input Enum" slicecount="20" visible="1" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,SERVO,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,ANALOG,ANALOG,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="5">
    </PIN>
@@ -106,6 +106,8 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Analog In" dstnodeid="16" dstpinname="Input">
@@ -233,7 +235,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="2" values="0,0.13">
+   <PIN pinname="Y Input Value" slicecount="2" values="0.1,0.44">
    </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Hue">
@@ -290,6 +292,8 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="Z" slicecount="1" values="-0.15">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0.5">
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Transform Out" dstnodeid="24" dstpinname="Transform">
