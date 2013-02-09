@@ -2,4 +2,5 @@
 
 * LDR 145475 - 62 (conrad, Zeil)
 * 6B Bleistifte
+* Metall-Reiﬂverschluss
 
