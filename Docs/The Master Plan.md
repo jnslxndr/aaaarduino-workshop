@@ -3,7 +3,7 @@
 ## Planning the Workshop
 
 Workshop Duration: 3h
-Friday, 15th 10am
+Friday, Feb. 15th 10 am to 1 pm
 
 ### Timing
 
@@ -11,7 +11,7 @@ Friday, 15th 10am
  5	Introduction, who we are, what we are going to do and how
 
 **Block 1 (25)**
-10	– Install the Arduino Board driver (if you haven't already)
+10	– Install the Arduino Board driver and make sure the hardware connects correctly
  5	– What are we dealing with (Short introduction on Arduino IDE & the Firmata Protocol)
 10	– Upload the StandardFirmata to the Arduino (find your Comport, etc)
 
