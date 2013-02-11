@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
    <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\03_Physical_Pixel\PhysicalCam.v4p" systemname="PhysicalCam" filename="C:\Users\horst\DEV\nodeworkshop\03_Physical_Pixel\PhysicalCam.v4p">
    <BOUNDS type="Window" left="6765" top="300" width="11445" height="14115">
    </BOUNDS>
@@ -25,7 +25,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5523" top="9336" width="810" height="240">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM8">
+   <PIN pinname="Input Enum" slicecount="1" values="COM3">
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output Enum" dstnodeid="23" dstpinname="ComPort">
@@ -49,7 +49,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1920" top="8640" width="6600" height="510">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="16" values="OUTPUT,OUTPUT,PWM,OUTPUT,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,PWM,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
+   <PIN pinname="Input Enum" slicecount="16" values="OUTPUT,OUTPUT,OUTPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,PWM,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="8">
    </PIN>
@@ -221,21 +221,17 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="38" systemname="IOBox (Color)">
-   <BOUNDS type="Node" left="2337" top="6969" width="0" height="0">
+   <BOUNDS type="Node" left="3222" top="7014" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2337" top="6969" width="2250" height="600">
+   <BOUNDS type="Box" left="3222" top="7014" width="2250" height="600">
    </BOUNDS>
    <PIN pinname="Chooser Style" slicecount="1" values="RGBASlider">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Color" dstnodeid="38" dstpinname="Color Input" linkstyle="Bezier">
-   <LINKPOINT x="2365" y="5355">
-   </LINKPOINT>
-   <LINKPOINT x="2375" y="5355">
-   </LINKPOINT>
+   <LINK srcnodeid="36" srcpinname="Color" dstnodeid="38" dstpinname="Color Input" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="RGB (Color Split)" nodename="RGB (Color Split)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="1392" top="7164" width="690" height="270">
+   <BOUNDS type="Node" left="1395" top="5550" width="840" height="270">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -328,36 +324,14 @@
    <LINKPOINT x="1860" y="8488">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="1392" top="7659" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Count" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" visible="1">
-   </PIN>
-   <PIN pinname="Input 3" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="45" srcpinname="Red" dstnodeid="47" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Green" dstnodeid="47" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Blue" dstnodeid="47" dstpinname="Input 3">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="21" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="23" dstpinname="Pin Modes">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Firmware Version" dstnodeid="18" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="36" srcpinname="Color" dstnodeid="45" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2350" y="5453">
+   <LINKPOINT x="2345" y="4913">
    </LINKPOINT>
-   <LINKPOINT x="1445" y="5453">
+   <LINKPOINT x="1435" y="4373">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="51">
@@ -535,5 +509,67 @@
    </LINKPOINT>
    <LINKPOINT x="6765" y="2535">
    </LINKPOINT>
+   </LINK>
+   <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="74">
+   <BOUNDS type="Node" left="1395" top="6615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Z" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="1395" top="7170" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Destination Maximum" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="72">
+   <BOUNDS type="Node" left="2385" top="4920" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2385" top="4920" width="1455" height="1515">
+   </BOUNDS>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="3" values="1,0.9375,0.40625">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="1,0.329896907216495,0.11340206185567">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="73" dstpinname="Destination Maximum">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="XYZ" dstnodeid="73" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Red" dstnodeid="74" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Green" dstnodeid="74" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Blue" dstnodeid="74" dstpinname="Z">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="21" dstpinname="Input">
    </LINK>
    </PATCH>
