@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\horst\Desktop\Node Workshop\Blink.v4p" systemname="Blink" filename="C:\Users\horst\Desktop\Node Workshop\Blink.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
+   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\00_Blink\Blink.v4p" systemname="Blink" filename="C:\Users\horst\Desktop\Node Workshop\Blink.v4p">
    <BOUNDS type="Window" left="8400" top="2355" width="7770" height="9045">
    </BOUNDS>
    <NODE systemname="Arduino (Devices StandardFirmata 2.x)" filename="%VVVV%\addonpack\lib\nodes\modules\Devices\Arduino (Devices StandardFirmata 2.x).v4p" nodename="Arduino (Devices StandardFirmata 2.x)" componentmode="Hidden" id="13">
@@ -16,6 +16,10 @@
    <PIN pinname="ReportDigital" slicecount="1" values="0">
    </PIN>
    <PIN pinname="PinModes" visible="1">
+   </PIN>
+   <PIN pinname="Pin Modes" visible="1">
+   </PIN>
+   <PIN pinname="Firmware Version" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="12" systemname="IOBox (Enumerations)">
@@ -57,9 +61,9 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="13" srcpinname="Firmwareversion" dstnodeid="8" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="4611" top="5271" width="0" height="0">
    </BOUNDS>
@@ -105,7 +109,7 @@
    </BOUNDS>
    <BOUNDS height="3030" left="1725" top="855" type="Box" width="855">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="14" visible="1" values="OUTPUT,OUTPUT,INPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,PWM,OUTPUT,OUTPUT">
+   <PIN pinname="Input Enum" slicecount="14" visible="1" values="OUTPUT,OUTPUT,INPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,OUTPUT">
    </PIN>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
@@ -129,9 +133,9 @@
    <NODE componentmode="InABox" id="18" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="14" values="0,0,1,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="14" values="0,0,1,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="X Input Value" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <BOUNDS height="100" left="900" top="852" type="Node" width="100">
    </BOUNDS>
@@ -179,7 +183,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3585" top="4170" width="465" height="315">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="13">
+   <PIN pinname="Y Input Value" slicecount="1" values="11">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -261,5 +265,9 @@
    </LINKPOINT>
    <LINKPOINT x="4170" y="2640">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output Enum" dstnodeid="13" dstpinname="Pin Modes">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Firmware Version" dstnodeid="8" dstpinname="Input String">
    </LINK>
    </PATCH>
