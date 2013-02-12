@@ -486,20 +486,6 @@
    <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="5925" top="6855" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Texture" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="39" srcpinname="Texture Out" dstnodeid="52" dstpinname="Texture" linkstyle="VHV">
-   <LINKPOINT x="3460" y="4650">
-   </LINKPOINT>
-   <LINKPOINT x="5855" y="4620">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="55">
    <BOUNDS type="Node" left="7740" top="5130" width="100" height="100">
    </BOUNDS>
@@ -627,7 +613,7 @@
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Height">
    </LINK>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="73">
-   <BOUNDS type="Node" left="6090" top="6285" width="100" height="100">
+   <BOUNDS type="Node" left="5940" top="6840" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture" visible="1">
    </PIN>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
-   <PATCH nodename="C:\Users\horst\Desktop\Node Workshop\Bargraph.v4p" systemname="Bargraph" filename="C:\Users\horst\Desktop\Node Workshop\Bargraph.v4p">
-   <BOUNDS type="Window" left="7995" top="3075" width="9855" height="8325">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
+   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\01_Graf_Bar\Bargraph.v4p" systemname="Bargraph" filename="C:\Users\horst\Desktop\Node Workshop\Bargraph.v4p">
+   <BOUNDS type="Window" left="3825" top="1425" width="10845" height="8325">
    </BOUNDS>
    <NODE systemname="BarSpread (Spreads)" nodename="BarSpread (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1020" top="2925" width="100" height="100">
@@ -47,6 +47,10 @@
    </PIN>
    <PIN pinname="ReportDigital" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Pin Modes" visible="1">
+   </PIN>
+   <PIN pinname="Firmware Version" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="3" systemname="IOBox (Enumerations)">
    <BOUNDS type="Node" left="5553" top="5766" width="0" height="0">
@@ -75,11 +79,11 @@
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="6" systemname="IOBox (Enumerations)">
    <BOUNDS type="Node" left="1950" top="4830" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1950" top="4830" width="6600" height="510">
+   <BOUNDS type="Box" left="1950" top="4830" width="7830" height="480">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="16" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,PWM,PWM,PWM,PWM,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
+   <PIN pinname="Input Enum" slicecount="20" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,PWM,PWM,PWM,PWM,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
    </PIN>
-   <PIN pinname="Columns" slicecount="1" values="8">
+   <PIN pinname="Columns" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -88,6 +92,8 @@
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="2" dstpinname="PinModes">
@@ -121,9 +127,9 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Firmwareversion" dstnodeid="9" dstpinname="Input String">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="4851" top="5766" width="0" height="0">
    </BOUNDS>
@@ -167,7 +173,7 @@
    <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="14">
    <BOUNDS type="Node" left="765" top="4317" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Select" slicecount="1" values="14">
+   <PIN pinname="Select" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -285,7 +291,7 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0.404580152671756">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -318,4 +324,8 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="2" dstpinname="Pin Modes">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Firmware Version" dstnodeid="9" dstpinname="Input String">
+   </LINK>
    </PATCH>

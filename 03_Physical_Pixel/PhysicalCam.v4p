@@ -47,11 +47,11 @@
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20" systemname="IOBox (Enumerations)">
    <BOUNDS type="Node" left="1920" top="8640" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1920" top="8640" width="6600" height="510">
+   <BOUNDS type="Box" left="1920" top="8640" width="8250" height="480">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="16" values="OUTPUT,OUTPUT,OUTPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,PWM,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
+   <PIN pinname="Input Enum" slicecount="20" values="OUTPUT,OUTPUT,OUTPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,PWM,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,PWM">
    </PIN>
-   <PIN pinname="Columns" slicecount="1" values="8">
+   <PIN pinname="Columns" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
@@ -103,7 +103,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4821" top="9336" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -113,7 +113,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Enable">
@@ -141,7 +141,7 @@
    <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="15">
    <BOUNDS type="Node" left="735" top="7887" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Select" slicecount="1" values="14">
+   <PIN pinname="Select" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>

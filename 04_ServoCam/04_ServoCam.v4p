@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
    <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\04_ServoCam\04_ServoCam.v4p" systemname="04_ServoCam" filename="C:\Users\horst\DEV\nodeworkshop\04_ServoCam\04_ServoCam.v4p">
    <BOUNDS type="Window" left="840" top="465" width="18030" height="14505">
    </BOUNDS>
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2250" top="405" width="4125" height="945">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="20" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,SERVO,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT" visible="1">
+   <PIN pinname="Input Enum" slicecount="20" visible="1" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,SERVO,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT">
    </PIN>
    <PIN pinname="Columns" slicecount="1" values="5">
    </PIN>
@@ -63,9 +63,9 @@
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="scY">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0" visible="1" pintype="Input">
+   <PIN pinname="X Input Value" slicecount="1" visible="1" pintype="Input" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0" visible="-1" pintype="Input">
+   <PIN pinname="Y Input Value" slicecount="1" visible="-1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="-1" pintype="Output">
    </PIN>
@@ -511,5 +511,23 @@
    <LINK srcnodeid="38" srcpinname="Transform Out" dstnodeid="57" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="47" srcpinname="Output" dstnodeid="38" dstpinname="X">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="74" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="10140" top="2325" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10140" top="2325" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Enabled">
    </LINK>
    </PATCH>

@@ -105,17 +105,17 @@
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Reset">
    </LINK>
    <NODE componentmode="InABox" id="15" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
-   <BOUNDS height="100" left="1725" top="855" type="Node" width="100">
+   <BOUNDS height="100" left="1695" top="255" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="3030" left="1725" top="855" type="Box" width="855">
+   <BOUNDS height="3990" left="1695" top="255" type="Box" width="1020">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="14" visible="1" values="OUTPUT,OUTPUT,INPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,OUTPUT">
+   <PIN pinname="Input Enum" slicecount="20" visible="1" values="OUTPUT,OUTPUT,INPUT,PWM,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,PWM,PWM,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,INPUT,PWM,OUTPUT,PWM">
    </PIN>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="14">
+   <PIN pinname="Rows" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
@@ -133,17 +133,17 @@
    <NODE componentmode="InABox" id="18" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="20" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="X Input Value" slicecount="20" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <BOUNDS height="100" left="900" top="852" type="Node" width="100">
+   <BOUNDS height="100" left="870" top="252" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="3015" left="900" top="852" type="Box" width="780">
+   <BOUNDS height="3975" left="870" top="252" type="Box" width="945">
    </BOUNDS>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="14">
+   <PIN pinname="Rows" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
