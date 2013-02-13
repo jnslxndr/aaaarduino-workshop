@@ -159,7 +159,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="105" top="855" width="2400" height="1305">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Simple Servo Example&cr;&lf;&cr;&lf;Servo Follows the mouse|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Mouse2Servo as a simple example how to hook up a servo motor|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -185,7 +185,7 @@
    </PIN>
    <PIN pinname="Y" slicecount="1" visible="1" values="-1">
    </PIN>
-   <PIN pinname="X" slicecount="1" values="-0.8045" visible="1">
+   <PIN pinname="X" slicecount="1" visible="1" values="-0.8045">
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="90">
@@ -253,7 +253,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7080" top="2205" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.3">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -499,6 +499,8 @@
    </PIN>
    <PIN pinname="TranslateY" visible="1">
    </PIN>
+   <PIN pinname="ScaleX" slicecount="1" values="0.8">
+   </PIN>
    </NODE>
    <LINK srcnodeid="164" srcpinname="Transform Out" dstnodeid="141" dstpinname="Transform">
    </LINK>
@@ -632,4 +634,20 @@
    <LINKPOINT x="11260" y="5158">
    </LINKPOINT>
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="181" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="210" top="15" width="1665" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="210" top="15" width="4560" height="645">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Servoo Me, Servo You|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="19">
+   </PIN>
+   </NODE>
    </PATCH>
