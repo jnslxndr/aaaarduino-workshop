@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\xx_Listen_And_Repeat\xx_Listen_And_Repeat.v4p" systemname="xx_Listen_And_Repeat" filename="C:\Users\horst\DEV\nodeworkshop\xx_Listen_And_Repeat\xx_Listen_And_Repeat.v4p">
+   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\07_Extras\xx_Listen_And_Repeat\xx_Listen_And_Repeat.v4p" systemname="xx_Listen_And_Repeat" filename="C:\Users\horst\DEV\nodeworkshop\xx_Listen_And_Repeat\xx_Listen_And_Repeat.v4p">
    <BOUNDS type="Window" left="6840" top="210" width="11895" height="11670">
    </BOUNDS>
    <NODE systemname="Arduino (Devices StandardFirmata 2.x)" filename="%VVVV%\addonpack\lib\nodes\modules\Devices\Arduino (Devices StandardFirmata 2.x).v4p" nodename="Arduino (Devices StandardFirmata 2.x)" componentmode="Hidden" id="5">
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6120" top="3525" width="780" height="255">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM8">
+   <PIN pinname="Input Enum" slicecount="1" values="COM3">
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="5" dstpinname="ComPort">
@@ -33,7 +33,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5700" top="2790" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -43,7 +43,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Enable">
@@ -70,6 +70,8 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="4">
    </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Analog In" dstnodeid="9" dstpinname="Input">
@@ -159,7 +161,7 @@
    </PIN>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.36485,0.36485,0.36485,0.99333|" visible="1">
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.36485,0.36485,0.36485,0.99333|">
    </PIN>
    </NODE>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="34">
@@ -255,7 +257,7 @@
    </BOUNDS>
    <PIN pinname="Index" slicecount="1" values="12">
    </PIN>
-   <PIN pinname="Input" slicecount="1" values="1" visible="1">
+   <PIN pinname="Input" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Spread" visible="1">
    </PIN>
@@ -331,7 +333,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4800" top="8370" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -343,7 +345,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Play">

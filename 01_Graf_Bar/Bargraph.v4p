@@ -205,6 +205,8 @@
    </PIN>
    <PIN pinname="Period" slicecount="1" values="1.71">
    </PIN>
+   <PIN pinname="Pause" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="18">
    <BOUNDS type="Node" left="1020" top="2535" width="100" height="100">
@@ -249,7 +251,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Shape" slicecount="1" values="Linear">
+   <PIN pinname="Shape" slicecount="1" values="Triangle">
    </PIN>
    </NODE>
    <NODE systemname="CAR (Spreads)" nodename="CAR (Spreads)" componentmode="Hidden" id="27">
@@ -291,7 +293,7 @@
    </PIN>
    <PIN pinname="Show Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="0.221374045801527">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -306,8 +308,6 @@
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="28" srcpinname="X Output Value" dstnodeid="18" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="21" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="29" systemname="IOBox (String)">
@@ -327,5 +327,7 @@
    <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="2" dstpinname="Pin Modes">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Firmware Version" dstnodeid="9" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="18" dstpinname="Input 1">
    </LINK>
    </PATCH>

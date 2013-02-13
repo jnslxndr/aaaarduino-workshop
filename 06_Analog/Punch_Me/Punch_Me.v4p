@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\06_Analog_Sensors\Punch_Me\Punch_Me.v4p" systemname="xx_Punch_Me" filename="C:\Users\horst\DEV\nodeworkshop\xx_Punch_Me\xx_Punch_Me.v4p">
+   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\06_Analog\Punch_Me\Punch_Me.v4p" systemname="xx_Punch_Me" filename="C:\Users\horst\DEV\nodeworkshop\xx_Punch_Me\xx_Punch_Me.v4p">
    <BOUNDS type="Window" left="8385" top="195" width="12660" height="13065">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
@@ -21,7 +21,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2685" top="8385" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="82">
+   <PIN pinname="Y Input Value" slicecount="1" values="10">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -82,12 +82,12 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="Projection" dstnodeid="0" dstpinname="Projection">
    </LINK>
-   <NODE systemname="SimpleMutableMesh" filename="SimpleMutableMesh.v4p" nodename="SimpleMutableMesh.v4p" componentmode="Hidden" id="58">
+   <NODE systemname="SimpleMutableMesh" filename="SimpleMutableMesh.v4p" nodename="SimpleMutableMesh.v4p" componentmode="InAWindow" id="58">
    <BOUNDS type="Node" left="1503" top="9815" width="2235" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="15" top="5023" width="9720" height="9585">
    </BOUNDS>
-   <BOUNDS type="Window" left="9438" top="5810" width="9720" height="9585">
+   <BOUNDS type="Window" left="10800" top="1515" width="9720" height="9585">
    </BOUNDS>
    <PIN pinname="Y" visible="1" slicecount="1" values="0">
    </PIN>
@@ -301,7 +301,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6495" top="3315" width="1590" height="240">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM8">
+   <PIN pinname="Input Enum" slicecount="1" values="COM3">
    </PIN>
    </NODE>
    <LINK srcnodeid="85" srcpinname="Output Enum" dstnodeid="84" dstpinname="ComPort">
@@ -311,7 +311,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6150" top="2775" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -321,7 +321,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="86" srcpinname="Y Output Value" dstnodeid="84" dstpinname="Enable">
@@ -367,7 +367,7 @@
    <LINK srcnodeid="89" srcpinname="Output Enum" dstnodeid="84" dstpinname="Pin Modes">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="92">
-   <BOUNDS type="Node" left="4290" top="4095" width="100" height="100">
+   <BOUNDS type="Node" left="4290" top="4545" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -536,12 +536,6 @@
    </LINK>
    <LINK srcnodeid="106" srcpinname="Output" dstnodeid="105" dstpinname="Input 2" hiddenwhenlocked="1">
    </LINK>
-   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="58" dstpinname="Y" linkstyle="Bezier">
-   <LINKPOINT x="4335" y="8700">
-   </LINKPOINT>
-   <LINKPOINT x="3705" y="8700">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="107" systemname="IOBox (String)">
    <BOUNDS type="Node" left="285" top="210" width="765" height="270">
    </BOUNDS>
@@ -587,5 +581,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="84" srcpinname="Firmware Version" dstnodeid="109" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="97" srcpinname="Output" dstnodeid="58" dstpinname="Y">
    </LINK>
    </PATCH>

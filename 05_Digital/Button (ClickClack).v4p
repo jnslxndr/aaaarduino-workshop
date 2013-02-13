@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\05_Buttons\Button (Simple).v4p" systemname="Button (Simple)" filename="C:\Users\horst\DEV\nodeworkshop\Button (Simple).v4p">
+   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\05_Digital\Button (ClickClack).v4p" systemname="Button (Simple)" filename="C:\Users\horst\DEV\nodeworkshop\Button (Simple).v4p">
    <BOUNDS type="Window" left="435" top="225" width="10845" height="11415">
    </BOUNDS>
    <NODE systemname="Arduino (Devices StandardFirmata 2.x)" filename="%VVVV%\addonpack\lib\nodes\modules\Devices\Arduino (Devices StandardFirmata 2.x).v4p" nodename="Arduino (Devices StandardFirmata 2.x)" componentmode="Hidden" id="13">
@@ -185,7 +185,7 @@
    </PIN>
    <PIN pinname="Y Input Value" slicecount="20" visible="1" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="20" values="0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0">
+   <PIN pinname="X Input Value" slicecount="20" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0">
    </PIN>
    <BOUNDS height="100" left="1485" top="6717" type="Node" width="100">
    </BOUNDS>
@@ -237,7 +237,7 @@
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="32">
    <BOUNDS type="Node" left="3810" top="6450" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   <PIN pinname="Input" visible="1" slicecount="20" values="0">
    </PIN>
    <PIN pinname="Down Edge" visible="1">
    </PIN>
@@ -249,11 +249,9 @@
    </BOUNDS>
    <PIN pinname="Reset" visible="1" slicecount="20" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Run" visible="1" slicecount="1" values="0">
+   <PIN pinname="Run" visible="1" slicecount="20" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="32" srcpinname="Up Edge" dstnodeid="33" dstpinname="Reset" linkstyle="PolyLine">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="3045" top="7365" width="0" height="0">
    </BOUNDS>
@@ -271,14 +269,12 @@
    </PIN>
    <PIN pinname="Show SliceIndex" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Output" dstnodeid="34" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="13" srcpinname="Firmware Version" dstnodeid="8" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="13" srcpinname="Digital In" dstnodeid="33" dstpinname="Run">
-   </LINK>
-   <LINK srcnodeid="13" srcpinname="Digital In" dstnodeid="32" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Report Digital Pins">
    </LINK>
@@ -491,7 +487,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input" slicecount="1" visible="1" values="0">
+   <PIN pinname="Input" slicecount="20" visible="1" values="0">
    </PIN>
    <PIN pinname="Source Minimum" slicecount="1" values="0">
    </PIN>
@@ -550,8 +546,6 @@
    </LINK>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="67" dstpinname="Lightness">
    </LINK>
-   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Color Output" dstnodeid="50" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="50" srcpinname="Output" dstnodeid="63" dstpinname="Input 1">
@@ -588,6 +582,14 @@
    </NODE>
    <LINK srcnodeid="70" srcpinname="Transform Out" dstnodeid="41" dstpinname="Transform In">
    </LINK>
+   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Down Edge" dstnodeid="33" dstpinname="Reset">
+   </LINK>
    <LINK srcnodeid="13" srcpinname="Digital In" dstnodeid="30" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Digital In" dstnodeid="33" dstpinname="Run">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Digital In" dstnodeid="32" dstpinname="Input">
    </LINK>
    </PATCH>

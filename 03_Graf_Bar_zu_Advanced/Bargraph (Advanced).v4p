@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\02_Graf_Bar_zu_Advanced\Bargraph (Advanced).v4p" systemname="Bargraph (Advanced)" filename="C:\Users\horst\Desktop\Node Workshop\Bargraph (Advanced).v4p">
+   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\03_Graf_Bar_zu_Advanced\Bargraph (Advanced).v4p" systemname="Bargraph (Advanced)" filename="C:\Users\horst\Desktop\Node Workshop\Bargraph (Advanced).v4p">
    <BOUNDS type="Window" left="2625" top="1215" width="10830" height="10650">
    </BOUNDS>
    <NODE systemname="BarSpread (Spreads)" nodename="BarSpread (Spreads)" componentmode="Hidden" id="0">
@@ -57,7 +57,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5553" top="6846" width="810" height="240">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM8">
+   <PIN pinname="Input Enum" slicecount="1" values="COM3">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="2" dstpinname="ComPort">
@@ -113,7 +113,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4851" top="6846" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -123,7 +123,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enable">
@@ -422,8 +422,6 @@
    </NODE>
    <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="32" srcpinname="Position Out" dstnodeid="5" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="27" srcpinname="Remainder" dstnodeid="32" dstpinname="Go To Position">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38" systemname="IOBox (Value Advanced)">
@@ -469,5 +467,7 @@
    <LINK srcnodeid="39" srcpinname="Output Enum" dstnodeid="2" dstpinname="Pin Modes">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Firmware Version" dstnodeid="9" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Position Out" dstnodeid="5" dstpinname="Input">
    </LINK>
    </PATCH>

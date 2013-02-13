@@ -639,7 +639,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="210" top="15" width="4560" height="645">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Servoo Me, Servo You|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Servo Me, Servo You|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
