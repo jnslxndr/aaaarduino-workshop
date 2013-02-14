@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\02_Physical_Pixel\PhysicalCam.v4p" systemname="PhysicalCam" filename="C:\Users\horst\DEV\nodeworkshop\03_Physical_Pixel\PhysicalCam.v4p">
-   <BOUNDS type="Window" left="6765" top="300" width="11445" height="14115">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+   <PATCH nodename="C:\Work\nodeworkshop\02_Physical_Pixel\PhysicalCam.v4p" systemname="PhysicalCam" filename="C:\Users\horst\DEV\nodeworkshop\03_Physical_Pixel\PhysicalCam.v4p">
+   <BOUNDS type="Window" left="6390" top="300" width="11445" height="11700">
    </BOUNDS>
    <NODE systemname="Arduino (Devices StandardFirmata 2.x)" filename="%VVVV%\addonpack\lib\nodes\modules\Devices\Arduino (Devices StandardFirmata 2.x).v4p" nodename="Arduino (Devices StandardFirmata 2.x)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="1200" top="10065" width="4395" height="270">
@@ -139,18 +139,14 @@
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Reset">
    </LINK>
    <NODE systemname="Select (Value)" nodename="Select (Value)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="735" top="7887" width="100" height="100">
+   <BOUNDS type="Node" left="405" top="7932" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Select" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="21" dstpinname="Spread" linkstyle="Bezier">
-   <LINKPOINT x="795" y="8342">
-   </LINKPOINT>
-   <LINKPOINT x="1200" y="8422">
-   </LINKPOINT>
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="21" dstpinname="Spread" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="21" srcpinname="Output" dstnodeid="23" dstpinname="Input">
    </LINK>
@@ -202,11 +198,7 @@
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="1215" y="9983">
-   </LINKPOINT>
-   <LINKPOINT x="735" y="9983">
-   </LINKPOINT>
+   <LINK srcnodeid="21" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Pipet (EX9.Texture Simple)" filename="%VVVV%\lib\nodes\modules\EX9.Texture\Pipet (EX9.Texture Simple).v4p" nodename="Pipet (EX9.Texture Simple)" componentmode="Hidden" id="36">
    <BOUNDS type="Node" left="2352" top="3459" width="100" height="100">
@@ -318,21 +310,13 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Index" linkstyle="Bezier">
-   <LINKPOINT x="2430" y="8568">
-   </LINKPOINT>
-   <LINKPOINT x="1860" y="8488">
-   </LINKPOINT>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Index" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="23" dstpinname="Pin Modes">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Firmware Version" dstnodeid="18" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Color" dstnodeid="45" dstpinname="Input" linkstyle="Bezier">
-   <LINKPOINT x="2345" y="4913">
-   </LINKPOINT>
-   <LINKPOINT x="1435" y="4373">
-   </LINKPOINT>
+   <LINK srcnodeid="36" srcpinname="Color" dstnodeid="45" dstpinname="Input" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="51">
    <BOUNDS type="Node" left="4635" top="5970" width="2190" height="270">
@@ -418,16 +402,12 @@
    </NODE>
    <LINK srcnodeid="59" srcpinname="Output" dstnodeid="57" dstpinname="Color">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Color" dstnodeid="59" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="2395" y="4133">
-   </LINKPOINT>
-   <LINKPOINT x="7730" y="4133">
-   </LINKPOINT>
+   <LINK srcnodeid="36" srcpinname="Color" dstnodeid="59" dstpinname="Input 2" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="VideoIn (DShow9)" nodename="VideoIn (DShow9)" componentmode="Hidden" id="63">
    <BOUNDS type="Node" left="2325" top="780" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Video Format" slicecount="1" values="YUY2">
+   <PIN pinname="Video Format" slicecount="1" values="RGB24">
    </PIN>
    <PIN pinname="Video" visible="1">
    </PIN>
@@ -516,7 +496,7 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="Blue" dstnodeid="74" dstpinname="Z">
    </LINK>
-   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="21" dstpinname="Input">
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="21" dstpinname="Input" linkstyle="PolyLine">
    </LINK>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="75">
    <BOUNDS type="Node" left="4620" top="5040" width="100" height="100">
@@ -528,11 +508,7 @@
    <PIN pinname="Texture Transform" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="64" srcpinname="Texture Out" dstnodeid="75" dstpinname="Texture" linkstyle="Bezier">
-   <LINKPOINT x="2400" y="3420">
-   </LINKPOINT>
-   <LINKPOINT x="4950" y="3420">
-   </LINKPOINT>
+   <LINK srcnodeid="64" srcpinname="Texture Out" dstnodeid="75" dstpinname="Texture" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="75" srcpinname="Layer" dstnodeid="58" dstpinname="Layer 1">
    </LINK>
@@ -544,30 +520,44 @@
    <PIN pinname="Y" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="76" srcpinname="X" dstnodeid="36" dstpinname="X" linkstyle="Bezier">
-   <LINKPOINT x="5025" y="2400">
-   </LINKPOINT>
-   <LINKPOINT x="2715" y="2400">
-   </LINKPOINT>
+   <LINK srcnodeid="76" srcpinname="X" dstnodeid="36" dstpinname="X" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="X" dstnodeid="55" dstpinname="TranslateX" linkstyle="Bezier">
-   <LINKPOINT x="5085" y="2295">
-   </LINKPOINT>
-   <LINKPOINT x="6615" y="2295">
-   </LINKPOINT>
+   <LINK srcnodeid="76" srcpinname="X" dstnodeid="55" dstpinname="TranslateX" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Y" dstnodeid="55" dstpinname="TranslateY" linkstyle="Bezier">
-   <LINKPOINT x="5250" y="2295">
-   </LINKPOINT>
-   <LINKPOINT x="6780" y="2295">
-   </LINKPOINT>
+   <LINK srcnodeid="76" srcpinname="Y" dstnodeid="55" dstpinname="TranslateY" linkstyle="PolyLine">
    </LINK>
-   <LINK srcnodeid="76" srcpinname="Y" dstnodeid="36" dstpinname="Y" linkstyle="Bezier">
-   <LINKPOINT x="5190" y="2400">
-   </LINKPOINT>
-   <LINKPOINT x="3030" y="2400">
-   </LINKPOINT>
+   <LINK srcnodeid="76" srcpinname="Y" dstnodeid="36" dstpinname="Y" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="70" srcpinname="Transform Out" dstnodeid="75" dstpinname="Texture Transform">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="77" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="870" top="7545" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="870" top="7545" width="315" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="77" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Select">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="78" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5760" top="4170" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5760" top="4170" width="495" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="70" dstpinname="ScaleX">
    </LINK>
    </PATCH>
