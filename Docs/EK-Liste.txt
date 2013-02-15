@@ -1,6 +1,7 @@
 # Einkaufsliste Workshop
 
-* LDR 145475 - 62 (conrad, Zeil)
-* 6B Bleistifte
-* Metall-Reiﬂverschluss
+* LDR 145475 - 62 (conrad, Zeil) ~15
+* 6B Bleistifte / Graphitstifte ~30
+* Metall-Rei√üverschluss ~1 for Demo
+* 220 Ohm Resistors ~180
 
