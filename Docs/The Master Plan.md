@@ -41,7 +41,7 @@ _95 min left_
 
 10 - Click/Clack – Buttons simple, how to set it up (Resistor, PinMode & Report Digital Pins)
  5 – Clack/Click – Buttons with PULL_UP
-10 – The swizz army sensor – Potentiometers (Use of PinMode ANALOG & Explanation on voltage dividers)
+10 – The Swizz army sensor – Potentiometers (Use of PinMode ANALOG & Explanation on voltage dividers)
  5 – Super Analog – Pencil input (How to roll your own)
  5 – There was Light – Using LDRs (as follow up example on voltage division)
  5 – Under Pressure – Using FSR Sensor (as follow up example on voltage division)
@@ -53,7 +53,7 @@ _45 min left_
 **Block 4 – The Challange (45)**
 
 Build your own fancy Game-/MIDI-/Whatever-You-Like-Controler.
-The strangest ever, but working controler wins!
+The strangest ever, but working controller wins!
 
 Prices: A book from O'Reilly on Arduino
 
@@ -63,6 +63,6 @@ Prices: A book from O'Reilly on Arduino
 ## TODO
 
 * use pin 11 or 3 for the blink example
-* maybe change advanced bargraph example to knight rider
+* maybe change advanced bar graph example to knight rider
 * more mesh generation examples
 * examples for transform to physical transformation
