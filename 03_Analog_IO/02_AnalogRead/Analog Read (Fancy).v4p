@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\Users\jens\Documents\aaaarduino-workshop\03_Analog_IO\02_AnalogRead\Analog Read (Fancy).v4p" systemname="DrawableSensors" filename="C:\Users\horst\DEV\nodeworkshop\06_Analog_Sensors\DrawableSensors.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\Users\jens\Documents\aaaarduino-workshop\03_Analog_IO\02_AnalogRead\Analog Read (Fancy).v4p" systemname="DrawableSensors" filename="C:\Users\horst\DEV\nodeworkshop\06_Analog_Sensors\DrawableSensors.v4p" scrollx="30" scrolly="0">
    <BOUNDS type="Window" left="6645" top="420" width="8025" height="11700">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="10">
@@ -28,48 +28,6 @@
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    </NODE>
-   <NODE systemname="Arduino (Devices StandardFirmata 2.x)" filename="%VVVV%\addonpack\lib\nodes\modules\Devices\Arduino (Devices StandardFirmata 2.x).v4p" nodename="Arduino (Devices StandardFirmata 2.x)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="1440" top="2565" width="3765" height="270">
-   </BOUNDS>
-   <PIN pinname="Analog In" visible="1">
-   </PIN>
-   <PIN pinname="Pin Modes" visible="1" slicecount="20" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,OUTPUT,OUTPUT,ANALOG,ANALOG,ANALOG,ANALOG,ANALOG,ANALOG">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="15" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="5160" top="2055" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5160" top="2055" width="1590" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" values="COM7">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="ComPort">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="15" srcpinname="Output Enum" dstnodeid="14" dstpinname="ComPort">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4065" top="1845" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4065" top="1845" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enable">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Enable">
-   </LINK>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="1620" top="12210" width="100" height="100">
    </BOUNDS>
@@ -139,13 +97,11 @@
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="30">
    <BOUNDS type="Node" left="1425" top="4245" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="6" values="0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Analog In" dstnodeid="30" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="2070" top="3885" width="0" height="0">
    </BOUNDS>
@@ -163,80 +119,6 @@
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="30" dstpinname="Index">
    <LINKPOINT x="2077" y="4433">
    </LINKPOINT>
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="33" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3915" top="3030" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3915" top="3030" width="1995" height="345">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Firmware Version|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="14" srcpinname="Firmware Version" dstnodeid="33" dstpinname="Input String">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3300" top="3210" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3300" top="3210" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="IsConnected">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="14" srcpinname="IsConnected" dstnodeid="34" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="2520" top="1845" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2520" top="1845" width="495" height="480">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Report Analog Pins|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Report Analog Pins">
-   </LINK>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="36" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Node" left="1965" top="345" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1965" top="345" width="5490" height="885">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="20" values="OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,OUTPUT,ANALOG">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="5">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="36" srcpinname="Output Enum" dstnodeid="14" dstpinname="Pin Modes">
    </LINK>
    <NODE systemname="FrameDifference (Animation)" nodename="FrameDifference (Animation)" componentmode="Hidden" id="37">
    <BOUNDS type="Node" left="1650" top="4815" width="100" height="100">
