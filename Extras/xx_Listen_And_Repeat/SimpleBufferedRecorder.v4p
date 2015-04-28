@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\xx_Listen_And_Repeat\SimpleBufferedRecorder.v4p" systemname="SimpleBufferedRecorder" filename="C:\Users\horst\DEV\nodeworkshop\xx_Listen_And_Repeat\SimpleBufferedRecorder.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.1.dtd" >
+   <PATCH nodename="C:\Users\jens\Documents\aaaarduino-workshop\Extras\xx_Listen_And_Repeat\SimpleBufferedRecorder.v4p" systemname="SimpleBufferedRecorder" filename="C:\Users\horst\DEV\nodeworkshop\xx_Listen_And_Repeat\SimpleBufferedRecorder.v4p" scrollx="1020" scrolly="2580">
    <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="7305" top="4830" width="100" height="100">
    </BOUNDS>
@@ -348,7 +348,7 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE id="20" systemname="FrameDelay (Animation)" nodename="FrameDelay (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <NODE id="20" systemname="FrameDelay (Animation Legacy)" nodename="FrameDelay (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input 1" visible="1" pintype="Input">
    </PIN>
    <BOUNDS type="Node" left="11250" top="6720" width="100" height="100">
@@ -628,4 +628,8 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="39" dstpinname="Input 1">
    </LINK>
+   <PACK Name="Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.0.0">
+   </PACK>
    </PATCH>

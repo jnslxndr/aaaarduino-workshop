@@ -10,9 +10,7 @@ void onReportAnalog(byte pin, int state) {
   doReport = state;
 }
 
-void setup() {
-  sensor.set_CS_AutocaL_Millis(0xFFFFFFFF);
-  
+void setup() {  
   Firmata.attach(REPORT_ANALOG, onReportAnalog);
   Firmata.begin(57600);
 }

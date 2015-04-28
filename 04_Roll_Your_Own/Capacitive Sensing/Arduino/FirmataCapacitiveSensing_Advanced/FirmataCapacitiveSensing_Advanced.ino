@@ -42,9 +42,10 @@ void loop() {
 
   int sensorValue = sensor.capacitiveSensor(30);
 
-  if (doReport)
+  if (doReport) {
     Firmata.sendAnalog(0, sensorValue );
-
+  }
+  
   delay(samplingInterval);
 }
 

@@ -5,17 +5,18 @@
 
 CapacitiveSensor sensor = CapacitiveSensor(2,3);
 
-void setup() {
-  sensor.set_CS_AutocaL_Millis(0xFFFFFFFF);
-  
+int test = 0;
+String s = "";
+
+void setup() {  
   Firmata.begin(57600);
 }
 
 void loop() {
+  
   int sensorValue = sensor.capacitiveSensor(30);
 
-  if (doReport) {
-    Firmata.sendAnalog(0, sensorValue );
-  }
+  Firmata.sendAnalog(0, sensorValue);
+  
 }
 
