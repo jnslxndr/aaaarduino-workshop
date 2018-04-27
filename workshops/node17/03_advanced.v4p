@@ -1,0 +1,85 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\prototyping\Desktop\node17\firmata\03_advanced.v4p" systemname="main" filename="C:\Users\prototyping\Desktop\node17\firmata\main.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="6820" top="2030" width="9000" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="FirmataBoard (Devices)" filename="%VVVV%\lib\packs\VL.IO.Firmata.0.55.43-g436959e253\vvvv\nodes\modules\FirmataBoard (Devices).v4p" nodename="FirmataBoard (Devices)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1780" top="2420" width="3040" height="270">
+   </BOUNDS>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Sysex Messages" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin State" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Pin Values" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Reporting" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1">
+   <BOUNDS type="Box" left="4830" top="1380" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4830" top="1380" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="1880" top="4110" width="800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1880" top="4110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Mean (Spectral)" nodename="Mean (Spectral)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1100" top="4310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="6" values="0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AnalogRead (Firmata Integer)" filename="%VVVV%\lib\packs\VL.IO.Firmata.0.55.43-g436959e253\vvvv\nodes\vl\VVVV.Devices.Firmata.vl" nodename="AnalogRead (Firmata Integer)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1920" top="3290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Pin State" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Pin State" dstnodeid="8" dstpinname="Pin State">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Value" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <NODE systemname="DigitalWrite (Firmata)" filename="%VVVV%\lib\packs\VL.IO.Firmata.0.55.43-g436959e253\vvvv\nodes\vl\VVVV.Devices.Firmata.vl" nodename="DigitalWrite (Firmata)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="1410" top="220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="0" dstpinname="Pin Values">
+   </LINK>
+   </PATCH>

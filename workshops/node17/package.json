@@ -1,0 +1,11 @@
+{
+  "name": "node17-firmata-workshop",
+  "version": "0.0.0-0",
+  "description": "The Arduino Firmata workshop @NODE17",
+  "main": "main.v4p",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jens alexander ewald",
+  "license": "GPL-3.0"
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\prototyping\Desktop\node17\firmata\super pong 3000.v4p" systemname="super pong 3000" filename="C:\Users\prototyping\Desktop\node17\firmata\05_Challenge\super pong 3000.v4p">
+   <BOUNDS type="Window" left="260" top="5900" width="9000" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="pong" filename="pong\pong.v4p" nodename="pong\pong.v4p" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2720" top="2730" width="3220" height="270">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
