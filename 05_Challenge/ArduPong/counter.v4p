@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\Pong\counter.v4p">
-   <BOUNDS height="10095" left="10125" top="0" type="Window" width="11130">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.8.dtd" >
+   <PATCH nodename="C:\Users\prototyping\Desktop\aaaarduino-workshop\05_Challenge\ArduPong\counter.v4p">
+   <BOUNDS height="10094" left="6664" top="525" type="Window" width="11130">
    </BOUNDS>
    <NODE componentmode="InAWindow" id="32" nodename="Renderer (GDI)">
    <BOUNDS height="0" left="6225" top="4620" type="Node" width="0">
@@ -32,7 +32,7 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <NODE id="30" nodename="Counter (Animation)">
+   <NODE id="30" nodename="Counter (Animation)" systemname="Counter (Animation Legacy)">
    <BOUNDS height="0" left="1860" top="1905" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Maximum" slicecount="1" values="9">
@@ -46,7 +46,7 @@
    <PIN pinname="Mode" slicecount="1" values="Clamp">
    </PIN>
    </NODE>
-   <NODE id="29" nodename="Counter (Animation)">
+   <NODE id="29" nodename="Counter (Animation)" systemname="Counter (Animation Legacy)">
    <BOUNDS height="0" left="5100" top="1905" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Maximum" slicecount="1" values="9">
@@ -330,7 +330,7 @@
    </LINK>
    <LINK dstnodeid="13" dstpinname="Input 1" srcnodeid="29" srcpinname="Output">
    </LINK>
-   <NODE id="9" nodename="FrameDelay (Animation)">
+   <NODE id="9" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation Legacy)">
    <BOUNDS height="0" left="6585" top="6855" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
@@ -354,15 +354,17 @@
    </LINK>
    <LINK dstnodeid="9" dstpinname="Input 1" srcnodeid="7" srcpinname="Down Edge">
    </LINK>
-   <NODE id="6" nodename="S (VALUE)">
+   <NODE id="6" nodename="S (VALUE)" systemname="S (VALUE)">
    <BOUNDS height="0" left="5430" top="8415" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="running">
    </PIN>
    <PIN pinname="Input Value" slicecount="1" visible="1" values="1.00000">
    </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <NODE id="5" nodename="FrameDelay (Animation)">
+   <NODE id="5" nodename="FrameDelay (Animation)" systemname="FrameDelay (Animation Legacy)">
    <BOUNDS height="0" left="5430" top="7920" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
@@ -646,4 +648,38 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="Output" dstnodeid="30" dstpinname="Reset">
    </LINK>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="3598" top="2282" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="46" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="46" dstpinname="Y">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="6538" top="5488" width="693" height="420">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6538" top="5488" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Score">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="XY" dstnodeid="47" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

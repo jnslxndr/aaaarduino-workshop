@@ -1,11 +1,11 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
-   <PATCH nodename="C:\Users\horst\DEV\nodeworkshop\Pong\ArduPong.v4p" systemname="ArduPong" filename="C:\Users\horst\DEV\nodeworkshop\Pong\ArduPong.v4p">
-   <BOUNDS type="Window" left="10125" top="0" width="11130" height="10095">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.8.dtd" >
+   <PATCH nodename="C:\Users\prototyping\Desktop\aaaarduino-workshop\05_Challenge\ArduPong\_root.v4p" systemname="ArduPong" filename="C:\Users\horst\DEV\nodeworkshop\Pong\ArduPong.v4p">
+   <BOUNDS type="Window" left="8610" top="231" width="10493" height="10094">
    </BOUNDS>
-   <NODE componentmode="Hidden" id="20" nodename="pong.v4p" systemname="pong" filename="pong.v4p">
+   <NODE componentmode="InAWindow" id="20" nodename="pong.v4p" systemname="pong" filename="pong.v4p">
    <BOUNDS height="100" left="825" top="3525" type="Node" width="100">
    </BOUNDS>
-   <BOUNDS height="10095" left="10125" top="0" type="Window" width="11130">
+   <BOUNDS height="10094" left="8610" top="231" type="Window" width="10493">
    </BOUNDS>
    <BOUNDS left="825" top="3525" type="Box">
    </BOUNDS>
@@ -25,11 +25,13 @@
    </PIN>
    <PIN pinname="Left Player" visible="1">
    </PIN>
+   <PIN pinname="Score" visible="1">
+   </PIN>
    </NODE>
    <NODE componentmode="InAWindow" id="6" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
    <BOUNDS height="0" left="1440" top="4230" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="7560" left="225" top="0" type="Window" width="9720">
+   <BOUNDS height="6328" left="224" top="0" type="Window" width="7609">
    </BOUNDS>
    <BOUNDS height="1800" left="1440" top="4230" type="Box" width="2400">
    </BOUNDS>
@@ -60,24 +62,28 @@
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    </NODE>
-   <NODE id="4" nodename="R (VALUE)" systemname="R (Value)">
-   <BOUNDS height="0" left="3285" top="3675" type="Node" width="0">
+   <NODE id="4" nodename="R (VALUE)" systemname="R (VALUE)">
+   <BOUNDS height="0" left="3145" top="3241" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="ball_out">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
    </NODE>
-   <NODE id="3" nodename="R (VALUE)" systemname="R (Value)">
+   <NODE id="3" nodename="R (VALUE)" systemname="R (VALUE)">
    <BOUNDS height="0" left="3870" top="3660" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="beep">
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE id="2" nodename="Beep (Windows)" systemname="Beep (Windows)">
-   <BOUNDS height="0" left="3285" top="4260" type="Node" width="0">
+   <BOUNDS height="0" left="3201" top="4358" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Duration" slicecount="1" values="0.1">
    </PIN>
@@ -100,7 +106,7 @@
    </LINK>
    <LINK dstnodeid="1" dstpinname="DoBeep" srcnodeid="3" srcpinname="Input Value">
    </LINK>
-   <NODE systemname="Mouse (System Window)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="24">
+   <NODE systemname="Mouse (System Window Legacy2)" filename="%VVVV%\lib\nodes\modules\System\Mouse (System Window).v4p" nodename="Mouse (System Window)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="795" top="2160" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Y" visible="1">
@@ -132,13 +138,13 @@
    </NODE>
    <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Re-Start">
    </LINK>
-   <NODE systemname="Keyboard (System Global)" filename="%VVVV%\lib\nodes\modules\System\Keyboard (System Global).v4p" nodename="Keyboard (System Global)" componentmode="Hidden" id="29">
+   <NODE systemname="Keyboard (System Global Legacy2)" filename="%VVVV%\lib\nodes\modules\System\Keyboard (System Global).v4p" nodename="Keyboard (System Global)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="2475" top="1230" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Keyboard" visible="1">
+   <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE systemname="KeyMatch (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (String)" componentmode="Hidden" id="30">
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (String)" componentmode="Hidden" id="30">
    <BOUNDS type="Node" left="2430" top="1770" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="||">
@@ -153,5 +159,105 @@
    <LINK srcnodeid="29" srcpinname="Keyboard" dstnodeid="30" dstpinname="Keyboard">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Escape" dstnodeid="27" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
+   <BOUNDS type="Box" left="3766" top="5040" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3766" top="5040" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="32" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
+   <BOUNDS type="Box" left="1043" top="4858" width="693" height="420">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1043" top="4858" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Score">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Score" dstnodeid="33" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Box" left="2653" top="5012" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2653" top="5012" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="34" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Counter (Animation)" nodename="Counter (Animation)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="2772" top="5782" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Up" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="35" dstpinname="Up">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
+   <BOUNDS type="Box" left="2772" top="6531" width="693" height="210">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2772" top="6531" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="36" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
+   <BOUNDS type="Box" left="1281" top="6202" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1281" top="6202" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="37" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
